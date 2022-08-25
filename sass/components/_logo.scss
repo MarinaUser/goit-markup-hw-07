@@ -1,0 +1,25 @@
+.main-nav {
+    align-items: center;
+    display: flex;
+  }
+  .header-nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .header-logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-right: 93px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--main-title-color);
+  }
+  
+  .header-logo-blue {
+    color: var(--btn-link-color);
+  }
