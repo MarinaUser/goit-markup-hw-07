@@ -11,9 +11,7 @@
   }
   
   .submit-text {
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  @include text(700,14px,1.14,0.03em);
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 20px;
@@ -29,46 +27,34 @@
   border-radius: 4px;
   margin-right: 12px;
   color: #fff;
-  }
-  
-  .footer-input::placeholder {
-    font-size: 16px;
-  line-height: 1.25;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  
+  &::placeholder {
+    @include text(null,16px,1.25,0.03em);
+    @extend %position;
   color: rgba(255, 255, 255, 0.6);
   margin-left: 16px;
   }
+
+  }
   
   .footer-send-btn {
-    display: flex;
+    @extend %position;
   justify-content: center;
-  align-items: center;
-    width: 200px;
+  width: 200px;
   height: 50px;
   background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
+    @include title(700,16px,1.87,0.06em);
   text-align: center;
-  letter-spacing: 0.06em;
   color: #FFFFFF;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   
-  }
-  .footer-send-btn:hover,
-  .footer-send-btn:focus {
+    &:hover,
+    &:focus {
     background-color:  #188ce8;
   
   }
-  
-  
-  .footer-send-btn::after {
+    &::after {
     display: inline-block;
     text-align: center;
     content: "";
@@ -78,5 +64,8 @@
     margin-left: 10px;
     
   }
+   
+  }
+  
   
   

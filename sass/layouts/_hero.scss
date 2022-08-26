@@ -17,11 +17,8 @@
       margin: 0 auto;
       margin-bottom: 30px;
       max-width: 696px;
-      font-weight: 900;
-      font-size: 44px;
-      line-height: 1.4;
+      @include title(900,44px,1.4,0.06em);
       text-align: center;
-      letter-spacing: 0.06em;
       text-transform: uppercase;
       color: #ffffff;
     }
@@ -32,11 +29,8 @@
     display: block;
     margin: 0 auto;
     padding: 10px 32px;
+    @include title(700,16px,1.9,0.06em);
     font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.06em;
     color: #ffffff;
     background-color: var(--btn-link-color);
     border: transparent;
