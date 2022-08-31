@@ -1,9 +1,10 @@
 .clients__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     &__item{
-      width: 170px;
-      height: 92px;
+      width: calc((100% - 30px)/2);
+      
     }
     
     &__link {
@@ -34,8 +35,26 @@
   
   .clients-title {
     @include title(null,36px,1.17,null);
-    margin-bottom: 50px;
+   
+    margin-bottom: 30px;
     text-align: center;
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    }
   }
   
+  .clients__list__item {
+    @media screen and (min-width: 480px) {
+      width: calc((100% - 30px)/2);
+      height: 92px;
+    }
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 60px)/3);
+      height: 92px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+      height: 92px;
+    }
+  }
   
